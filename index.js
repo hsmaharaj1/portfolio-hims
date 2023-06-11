@@ -65,7 +65,7 @@ container.appendChild(renderer.domElement)
 const controls = new THREE.OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true
 controls.autoRotate = true
-controls.autoRotateSpeed = 2
+controls.autoRotateSpeed = 10
 controls.update()
 
 renderer.setPixelRatio(2)
