@@ -1,0 +1,157 @@
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#cont-threejs{
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+}
+#cont-threejs.hide{
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(45deg, #fbd2ff, #0082fc),linear-gradient(142deg, transparent, white);
+    opacity: 40%;
+    height: 100vh;
+    width: 100vw;
+    transition: all 2s ease-out;
+}
+.container.bg-change{
+    background: linear-gradient(45deg, #b7e1ff, #00fca4),linear-gradient(142deg, transparent, white);
+}
+
+.text{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 8vw;
+    padding-top: 20vh;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 3;
+}
+.page-one{
+    position: block;
+    height: 100vh;
+}
+
+#name-text{
+    color: #340044;
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+}
+#title{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    color: #3c2b84;
+    font-weight: 800;
+    animation: slideInLeft 2s ease-in-out;
+}
+.description{
+    width: 30vw;
+    font-family: 'Merriweather', sans-serif;
+    color: #090b37;
+    letter-spacing: 0.1rem;
+    animation-delay: 4s;
+    animation: slideInLeft 2s ease-in-out;
+}
+.page-two{
+    position: block;
+    height: 100vh;
+    padding-left: 30vw;
+    padding-right: 15vw;
+    text-align: right;
+}
+.branch{
+    margin-right: 0px;
+    color: #340044;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.branch.animate{
+    opacity: 1;
+    animation: slideInRight 3s ease-in-out;
+}
+
+#skills{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    color: #3c2b84;
+    font-weight: bold;
+    text-align: right; 
+}
+.page-three{
+    position: block;
+    height: 100vh;
+    padding-left: 0vw;
+    padding-right: 20vw;
+    text-align: center;
+}
+#social-title{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    color: #3c2b84;
+    font-weight: bolder;
+    text-align: center; 
+}
+h3{
+    margin-right: 0px;
+    color: #340044;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    margin: 0.5rem;
+}
+#arrow{
+    display: inline-flex;
+    padding-left: 2rem;
+    font-family: 'Merriweather', sans-serif;
+    align-items: flex-end;
+}
+#arrow-icon{
+    border-radius: 0;
+}
