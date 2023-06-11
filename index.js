@@ -26,7 +26,7 @@ const height = window.innerHeight
 
 //Creating Scene
 const scene = new THREE.Scene()
-scene.background = new THREE.Color("#00000080")
+// scene.background = new THREE.Color("#00000080")
 
 //Setting Camera
 const fov = 45
@@ -38,8 +38,9 @@ camera.position.set(0,0,40)
 scene.add(camera)
 
 //Renderer
-const renderer = new THREE.WebGLRenderer()
-renderer.setSize(width, height)
+const renderer = new THREE.WebGLRenderer({alpha: true})
+renderer.setClearColor(0x000000, 0)
+renderer.setSize(width/2, height/1.5)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 //Light
@@ -59,7 +60,7 @@ loader.load("tony_stark/scene.gltf", function(gltf){
 })
 
 const container = document.getElementById("cont-threejs")
-container.append(renderer.domElement)
+container.appendChild(renderer.domElement)
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true
