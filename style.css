@@ -19,6 +19,12 @@
     }
 }
 
+@keyframes typing {
+    from {width: 0;}
+    to{width: 100%;}
+}
+
+
 body{
     margin: 0px;
     width: 100%;
@@ -73,12 +79,15 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 #title{
+    overflow: hidden;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1.4rem;
     letter-spacing: 0.3rem;
+    white-space: nowrap;
     color: #3c2b84;
     font-weight: 800;
-    animation: slideInLeft 2s ease-in-out;
+    animation: typing 4s steps(40) 1s 1 normal both;
+
 }
 .description{
     width: 30vw;
