@@ -64,12 +64,14 @@ a.hover{
 .container.bg-change{
     background: linear-gradient(45deg, #b7e1ff, #00fca4),linear-gradient(142deg, transparent, white);
 }
-
+#message{
+    display: none;
+}
 .text{
     width: 100vw;
     height: 100vh;
     padding-left: 8vw;
-    padding-top: 20vh;
+    padding-top: 12rem;
     position: fixed;
     overflow-y: auto;
     z-index: 3;
@@ -248,7 +250,10 @@ img{
     background-color: rgb(41, 77, 63);
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 450px) {
+    .text{
+        padding-top: 7rem;
+    }
     .description{
         width: 74vw;
         font-size: 1.2rem;
@@ -261,5 +266,8 @@ img{
     }
     .branch{
         font-size: 3rem;
+    }
+    #message{
+        display: block;
     }
 }
