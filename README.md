@@ -38,7 +38,7 @@ This website serves as a central hub for presenting my projects, skills, and ach
 
 ## Usage
 
-1. Open the `index.html` file in a web browser.
+1. Open the `index.html` file in a web browser with Live Server (or else some elements and effects will not render)
 2. Explore the various sections and navigate through the website.
 3. Get to know me :)
 
