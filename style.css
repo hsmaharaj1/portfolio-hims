@@ -118,6 +118,7 @@ a.hover{
 }
 .branch{
     margin-right: 0px;
+    margin-bottom: 1rem;
     color: #340044;
     font-weight: bold;
     font-size: 4rem;
@@ -131,22 +132,43 @@ a.hover{
     animation: slideInRight 3s ease-in-out;
 }
 .experience{
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
 }
-#skills{
+.skillset{
+    padding-top: 1rem;
     order: 2;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.3rem;
     color: #3c2b84;
     font-weight: bold;
-    text-align: right; 
+    text-align: left; 
+}
+#title-skillset{
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+}
+#list-skillset{
+    letter-spacing: 0.1rem;
+}
+li{
+    font-weight: bolder;
+}
+.des-skillset{
+    font-size: 1rem;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1rem;
 }
 #skills_2{
     font-size: 1rem;
+    margin-top: 0;
     font-family: "IBM Plex Sans",sans-serif;
     color: #3c2b84;
     font-weight: 600;
@@ -156,6 +178,8 @@ a.hover{
     flex-direction: row;
 }
 .tag-item{
+    font-family: "Inter", sans-serif;
+
     margin: 0.2rem;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
@@ -263,6 +287,14 @@ img{
     height: 6rem;
     background-color: rgb(41, 77, 63);
 }
+@media only screen and (max-width: 800px) {
+    #cont-threejs{
+        display: none;
+    }
+    #message{
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 450px) {
     .text{
@@ -275,13 +307,7 @@ img{
     #name-text{
         font-size: 2.8rem;
     }
-    #cont-threejs{
-        display: none;
-    }
     .branch{
         font-size: 3rem;
-    }
-    #message{
-        display: block;
     }
 }

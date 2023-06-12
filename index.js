@@ -40,7 +40,7 @@ scene.add(camera)
 //Renderer
 const renderer = new THREE.WebGLRenderer({alpha: true})
 renderer.setClearColor(0x000000, 0)
-renderer.setSize(width/2, height/1.3)
+renderer.setSize(width/3, height/1.3)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 //Light
@@ -52,7 +52,7 @@ const loader  = new THREE.GLTFLoader()
 loader.load("tony_stark/scene.gltf", function(gltf){
     console.log(gltf)
     const root = gltf.scene
-    root.scale.set(12,12,12)
+    root.scale.set(13,13,13)
     root.position.set(0, 0, 0)
     scene.add(root)
 },undefined, function(error){
