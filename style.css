@@ -31,6 +31,13 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+a{
+    text-decoration: none;
+    color: rgb(14 27 22);
+}
+a.hover{
+    cursor: pointer;
+}
 #cont-threejs{
     display: block;
     position: fixed;
@@ -77,6 +84,7 @@ body{
     font-weight: bold;
     font-size: 4em;
     font-family: 'Oswald', sans-serif;
+
 }
 #title{
     overflow: hidden;
@@ -90,6 +98,7 @@ body{
 
 }
 .description{
+    display: flex;
     width: 30vw;
     font-family: 'Merriweather', sans-serif;
     color: #090b37;
@@ -99,9 +108,10 @@ body{
 }
 .page-two{
     position: block;
-    height: 100vh;
-    padding-left: 30vw;
+    min-height: 145vh;
+    /* padding-left: 30vw; */
     padding-right: 15vw;
+    flex-direction: row;
     text-align: right;
 }
 .branch{
@@ -118,8 +128,14 @@ body{
     opacity: 1;
     animation: slideInRight 3s ease-in-out;
 }
-
+.experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
 #skills{
+    order: 2;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.3rem;
@@ -127,9 +143,25 @@ body{
     font-weight: bold;
     text-align: right; 
 }
+#skills_2{
+    font-size: 1rem;
+    font-family: "IBM Plex Sans",sans-serif;
+    color: #3c2b84;
+    font-weight: 600;
+}
+#projects-heading{
+    order: 1;
+    margin-top: 0;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-weight:200;
+    color: rgb(51 82 72);
+}
 .page-three{
+    margin-top: 2rem;
     position: block;
-    height: 100vh;
+    min-height: 100vh;
     padding-left: 0vw;
     padding-right: 20vw;
     text-align: center;
@@ -164,4 +196,70 @@ img{
 }
 #arrow-icon{
     border-radius: 0;
+}
+.proj-container{
+    margin: 1rem;
+}
+.sub-proj-container{
+    display: flex;
+    width: 20rem;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.marker{
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.proj-list{
+    text-align: left;
+}
+.proj-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 7rem;
+}
+.year{
+    font-family: "JetBrains Mono", monospace;
+}
+.small-title{
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+.small-des{
+    font-family: "Manrope", sans-serif;
+}
+.circle{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(41, 77, 63);
+}
+.rectangle{
+    width:0.2rem;
+    height: 6rem;
+    background-color: rgb(41, 77, 63);
+}
+
+@media only screen and (max-width: 415px) {
+    .description{
+        width: 74vw;
+        font-size: 1.2rem;
+    }
+    #name-text{
+        font-size: 2.8rem;
+    }
+    #cont-threejs{
+        display: none;
+    }
+    .branch{
+        font-size: 3rem;
+    }
 }
