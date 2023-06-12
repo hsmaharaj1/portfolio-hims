@@ -151,6 +151,20 @@ a.hover{
     color: #3c2b84;
     font-weight: 600;
 }
+.tags{
+    display: flex;
+    flex-direction: row;
+}
+.tag-item{
+    margin: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    border: 0.02rem solid rgb(32, 51, 45);
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    width: fit-content;
+    color: rgb(75 119 105);
+}
 #projects-heading{
     order: 1;
     margin-top: 0;
