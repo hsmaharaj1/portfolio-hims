@@ -48,5 +48,5 @@ This website serves as a central hub for presenting my projects, skills, and ach
 If you have any questions, suggestions, or inquiries, feel free to reach out to me.
 
 - Email: hsmaharaj1@gmail.com
-- LinkedIn: [Your LinkedIn profile](https://www.linkedin.com/in/himanshu-sekhar-maharaj1/)
-- GitHub: [Your GitHub profile](https://github.com/hsmaharaj1)
+- LinkedIn: [My LinkedIn profile](https://www.linkedin.com/in/himanshu-sekhar-maharaj1/)
+- GitHub: [My GitHub profile](https://github.com/hsmaharaj1)
