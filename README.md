@@ -32,7 +32,7 @@ This website serves as a central hub for presenting my projects, skills, and ach
 
 ## Installation
 
-1. Clone the repository: `https://github.com/hsmaharaj1/protfolio-hims.git`
+1. Clone the repository: `https://github.com/hsmaharaj1/portfolio-hims.git`
 2. Open the project directory
 3. Used CDN so there's no need for any installation further
 
